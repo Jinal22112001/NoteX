@@ -1,38 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	position: relative;
+}
+
 .App {
-  text-align: center;
+	background-color: #ff738b;
+	min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > h1 {
+	padding: 1vmax;
+	font: 400 3vmax cursive;
+	color: #583069;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input_div {
+	height: 20vmax;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+.input_div > textarea {
+	text-decoration: none;
+	height: 12vmax;
+	width: 55vmax;
+	overflow: wrap;
+	margin: 1vmax;
+	resize: none;
+	border-radius: 10px;
+	padding: 1vmax;
+	background-color: #ffb58e;
+	outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input_div > button {
+	width: 15vmax;
+	height: 3.5vmax;
+	border: none;
+	background-color: #583069;
+	color: white;
+	transition: all 0.4s;
+}
+.input_div > button:hover {
+	background-color: #913673;
 }
 
-.App-link {
-  color: #61dafb;
+.Time_input_div {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.Time_input_div > h1 {
+	font: 400 2vmax cursive;
+	color: #583069;
+}
+.Time_input_div > h2 {
+	font: 400 2vmax cursive;
+	color: #583069;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timePopUp_social > a {
+	text-decoration: none;
+	padding: 1vmax;
+	transition: all 0.5s;
+}
+.timePopUp_social > a:hover {
+	color: white;
+}
+
+.main_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4vmax;
+}
+
+.container {
+	min-height: 15vmax;
+	width: 90%;
+	background-color: #ffb58e;
+	margin: 2vmax;
+	border-radius: 10px;
+}
+
+.container > button {
+	width: 10vmax;
+	height: 2.5vmax;
+	border: none;
+	background-color: #583069;
+	color: white;
+	margin: 1vmax;
+	transition: all 0.4s;
+}
+.container > button:hover {
+	background-color: #913673;
+}
+
+.time {
+	font-size: 1vmax;
+	color: #583069;
+	margin: 1vmax;
+}
+
+.date {
+	font-size: 1vmax;
+	color: #583069;
+	margin: 1vmax;
+}
+.text {
+	font-size: 1.5vmax;
+	color: #583069;
+	margin: 1vmax;
+	padding-left: 2vmax;
+}
+
+h2 {
+	font-size: 2vmax;
+	color: #132615;
+	margin: 1vmax;
+}
+
+@media screen and (max-width: 800px) {
+	.App > h1 {
+		padding: 2vmax;
+		font: 400 4vmax cursive;
+		color: #583069;
+	}
+	.input_div > textarea {
+		height: 16vmax;
+		width: 85%;
+	}
+	.input_div > button {
+		font: 300 2.2vmax "Roboto", sans-serif;
+	}
+	.main_container {
+		margin-top: 2vmax;
+	}
+
+	.container {
+		min-height: 20vmax;
+		width: 90%;
+		margin: 2vmax;
+	}
+
+	.container > button {
+		width: 12vmax;
+		height: 3.5vmax;
+		margin: 1.4vmax;
+		font: 300 2vmax "Roboto", sans-serif;
+	}
+	.time {
+		font-size: 1.8vmax;
+		margin: 1vmax;
+	}
+
+	.date {
+		font-size: 1.8vmax;
+		margin: 1vmax;
+	}
+	.text {
+		font-size: 2.2vmax;
+		margin: 1vmax;
+		padding-left: 3vmax;
+	}
+
+	h2 {
+		font-size: 3vmax;
+		margin: 1.5vmax;
+	}
+	.Time_input_div > h1 {
+		font: 400 3vmax cursive;
+		color: #583069;
+	}
+	.Time_input_div > h2 {
+		font: 400 3vmax cursive;
+		color: #583069;
+	}
 }
